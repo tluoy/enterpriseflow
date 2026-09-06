@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\backend\EnterpriseFlow.Application\EnterpriseFlow.Application.csproj" />
-    <ProjectReference Include="..\..\src\backend\EnterpriseFlow.Domain\EnterpriseFlow.Domain.csproj" />
+    <ProjectReference Include="../../../src/backend/EnterpriseFlow.Application\EnterpriseFlow.Application.csproj" />
+    <ProjectReference Include="../../../src/backend/EnterpriseFlow.Domain\EnterpriseFlow.Domain.csproj" />
   </ItemGroup>
 
 </Project>
