@@ -1,3 +1,5 @@
+using EnterpriseFlow.Domain.Exceptions;
+
 namespace EnterpriseFlow.Domain.Entities;
 
 public class Organization
@@ -16,6 +18,10 @@ public class Organization
 
     public Organization(string name)
     {
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            throw new DomainException("Organization name is required.");
+        }
         Id = Guid.NewGuid();
         Name = name;
         CreatedAt = DateTime.UtcNow;

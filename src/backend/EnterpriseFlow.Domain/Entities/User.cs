@@ -25,6 +25,11 @@ public class User
             throw new DomainException("Email is required.");
         }
 
+        if (!new System.ComponentModel.DataAnnotations.EmailAddressAttribute().IsValid(email))
+        {
+            throw new DomainException("A valid email is required.");
+        }
+
         if (string.IsNullOrWhiteSpace(displayName))
         {
             throw new DomainException("Display name is required.");
