@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/backend/">
+    <Project Path="src/backend/EnterpriseFlow.Api/EnterpriseFlow.Api.csproj" />
+    <Project Path="src/backend/EnterpriseFlow.Application/EnterpriseFlow.Application.csproj" />
+    <Project Path="src/backend/EnterpriseFlow.Domain/EnterpriseFlow.Domain.csproj" />
+    <Project Path="src/backend/EnterpriseFlow.Infrastructure/EnterpriseFlow.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/backend/">
+    <Project Path="tests/backend/EnterpriseFlow.Tests/EnterpriseFlow.Tests.csproj" />
+  </Folder>
+</Solution>
