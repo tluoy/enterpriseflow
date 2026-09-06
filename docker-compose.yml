@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: enterpriseflow-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: enterpriseflow
+      POSTGRES_USER: enterpriseflow
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - enterpriseflow_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  enterpriseflow_postgres_data:
