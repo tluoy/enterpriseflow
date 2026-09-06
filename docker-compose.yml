@@ -6,9 +6,9 @@ services:
     environment:
       POSTGRES_DB: enterpriseflow
       POSTGRES_USER: enterpriseflow
-      POSTGRES_PASSWORD: enterpriseflow
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - enterpriseflow_postgres_data:/var/lib/postgresql/data
 
